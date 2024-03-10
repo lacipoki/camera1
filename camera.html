@@ -17,18 +17,18 @@
 
 
     <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
-
-    <script src="js/quagga.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/@ericblade/quagga2@1.7.4/dist/quagga.min.js"></script>
 
     <script src="js/test.js" type="text/javascript"></script>
     <script>
-        $(function () {
-            startScanner();
-        });
-        const startScanner = () => {
-            console.log("Start!!");
+        // $(function () {
+        //     startScanner();
+        // });
+        // const startScanner = () => {
+        window.onload =function(){
+          console.log("Start!!");
             Quagga.init({
-                inputStream: {
+                   inputStream: {
                     name: "Live",
                     type: "LiveStream",
                     target: document.querySelector('#photo-area'),
@@ -121,7 +121,7 @@
                  Quagga.stop();
             });
         };
-        
+  
         
         
         
@@ -136,7 +136,7 @@
             Quagga.stop();
         });
         
-        
+      
     
   </script>
     
