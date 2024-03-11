@@ -10,3 +10,19 @@
 #photo-area.viewport canvas.drawingBuffer, video.drawingBuffer {
     margin-left: -320px;
 }
+
+#photo-area {
+    position: relative;
+    width: 640px;
+    height: 480px;
+}
+
+#overlay {
+    position: absolute;
+    top: 25%; /* 親要素（photo-area）の高さに対する割合 */
+    left: 25%; /* 親要素（photo-area）の幅に対する割合 */
+    width: 50%; /* 親要素（photo-area）の幅に対する割合 */
+    height: 50%; /* 親要素（photo-area）の高さに対する割合 */
+    border: 2px solid red; /* 枠線の色と太さを設定 */
+    box-sizing: border-box;
+}
